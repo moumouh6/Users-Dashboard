@@ -33,7 +33,7 @@ header {
 
 .search-bar i {
     color: gray;
-    margin-left: 10px;
+    width: 150px;
 }
 
 .top-bar {
@@ -230,9 +230,21 @@ footer {
         align-items: center;
     }
 
-    .search-bar {
+    header img{
+        visibility: hidden;
+    }
+
+    .logo{ 
+        display: flex;
+        justify-content: space-between;
+        width: 80%;
         margin-top: 10px;
-        max-width: 250px;
+        margin-right: 25%;
+    }
+
+    .search-bar {
+        max-width: 300px;
+        width: 70%;
     }
 
     .course-container {
@@ -245,4 +257,3 @@ footer {
         max-width: 300px;
     }
 }
-
