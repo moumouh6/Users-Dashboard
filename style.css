@@ -224,11 +224,14 @@ footer {
 
 
 /* Responsive Design */
+/* Responsive Design */
 @media (max-width: 768px) {
     .top-bar {
         flex-direction: column;
         align-items: center;
+        justify-content: space-between;
     }
+
 
     header img{
         visibility: hidden;
@@ -241,6 +244,7 @@ footer {
         margin-top: 10px;
         margin-right: 25%;
     }
+
 
     .search-bar {
         max-width: 300px;
