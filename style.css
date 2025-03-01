@@ -143,7 +143,7 @@ header {
 .categories span {
     cursor: pointer;
     padding: 5px 15px;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid transparent;
 }
 
 .categories .active {
@@ -220,5 +220,29 @@ footer {
 .partie-d footer{
     width: 400px;
     text-align: start;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .top-bar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-bar {
+        margin-top: 10px;
+        max-width: 250px;
+    }
+
+    .course-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .course-card {
+        width: 90%;
+        max-width: 300px;
+    }
 }
 
