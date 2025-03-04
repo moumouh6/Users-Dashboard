@@ -28,19 +28,19 @@
     <section class="recent-courses">
         <h2>Les cours les plus récents</h2>
         <div class="course-container">
-            <div class="course-card">
+            <div class="course-card" data-category="All">
                 <img src="./nextjs.png" alt="React">
                 <p>Mastering React & Next.js For Scalable Web Apps</p>
             </div>
-            <div class="course-card">
+            <div class="course-card" data-category="All">
                 <img src="./img-fe.png" alt="Frontend">
                 <p>Mastering Front-end Development</p>
             </div>
-            <div class="course-card">
+            <div class="course-card" data-category="All">
                 <img src="./backend.png" alt="Backend">
                 <p>Mastering Back-end Development</p>
             </div>
-            <div class="course-card">
+            <div class="course-card" data-category="All">
                 <img src="./java.png" alt="Java">
                 <p>Mastering java</p>
             </div>
@@ -49,53 +49,57 @@
 
     <section class="domains">
         <h2>Les domaines</h2>
-        <div class="mydict">
-            <div>
+        <div class="mydict" >
+            <div class="category-filter">
                 <label>
-                    <input type="radio" name="radio" checked="">
+                    <input type="radio" name="domain" value="All">
+                    <span>All</span>
+                </label>
+                <label>
+                    <input type="radio" name="domain" value="Back-End" checked>
                     <span>Back-End</span>
                 </label>
                 <label>
-                    <input type="radio" name="radio">
+                    <input type="radio" name="domain" value="Front-End">
                     <span>Front-End</span>
                 </label>
                 <label>
-                    <input type="radio" name="radio">
+                    <input type="radio" name="domain" value="AI">
                     <span>AI</span>
                 </label>
                 
             </div>
         </div>
         <div class="course-container">
-            <div class="course-card">
+            <div class="course-card" data-category="Back-End">
                 <img src="sql.png" alt="SQL">
                 <p>Mastering Databases: SQL & NoSQL Fundamentals</p>
             </div>
-            <div class="course-card">
+            <div class="course-card" data-category="Back-End">
                 <img src="python.png" alt="Python">
                 <p>Python for Absolute Beginners</p>
             </div>
-            <div class="course-card">
+            <div class="course-card" data-category="Back-End">
                 <img src="./backend.png" alt="Django">
                 <p>Mastering Back-end Development</p>
             </div>
-            <div class="course-card">
+            <div class="course-card" data-category="Back-End"> 
                 <img src="java.png" alt="Java">
                 <p>Mastering Java </p>
             </div>
-            <div class="course-card">
+            <div class="course-card" data-category="Front-End">
                 <img src="sql.png" alt="SQL">
                 <p>Mastering React & Next.js For Scalable Web Apps</p>
             </div>
-            <div class="course-card">
+            <div class="course-card" data-category="Front-End">
                 <img src="python.png" alt="Python">
                 <p>Mastering Front-end Development</p>
             </div>
-            <div class="course-card">
+            <div class="course-card" data-category="AI">
                 <img src="./backend.png" alt="Django">
                 <p>Mastering Back-end Development </p>
             </div>
-            <div class="course-card">
+            <div class="course-card" data-category="AI">
                 <img src="java.png" alt="Java">
                 <p>Mastering Java</p>
             </div>
@@ -222,5 +226,6 @@
         </div>
     </div>
 </section>
+<script src="index.js"></script>
 </body>
 </html>
