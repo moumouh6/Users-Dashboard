@@ -52,10 +52,64 @@ header {
     padding: 15px 30px;
 }
 
+/* Icône du menu */
 .menu-icon {
-    font-size: 35px;
+    font-size: 30px;
+    cursor: pointer;
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+/* Barre latérale */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: white;
+    color: black;
+    transition: 0.3s;
+
+}
+
+.sidebar-footer {
+ 
+}
+/* Bouton de fermeture */
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: none;
+    border: none;
+    color: black;
+    font-size: 20px;
     cursor: pointer;
 }
+
+/* Liens du menu */
+.sidebar a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+/* Affichage du menu */
+.sidebar.active {
+    left: 0;
+}
+
 
 /* Profil */
 .profile{
