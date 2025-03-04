@@ -26,3 +26,8 @@ document.addEventListener("DOMContentLoaded", function () {
     // Appliquer le filtre au chargement
     filterCourses();
 });
+
+ // Nav barre
+function toggleNav() {
+    document.getElementById("sidebar").classList.toggle("active");
+}
