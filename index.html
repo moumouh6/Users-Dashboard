@@ -10,7 +10,26 @@
 <body>
     <header class="top-bar">
         <div class="logo">
-            <div class="menu-icon">☰</div>
+          <div>
+            <div class="menu-icon" onclick="toggleNav()">☰</div>
+            <!-- Navbar cachée au départ -->
+            <div class="sidebar" id="sidebar">
+              <div>
+                <button class="close-btn" onclick="toggleNav()">✖</button>
+                <a href="#">Accueil</a>
+                <a href="#">Profile</a>
+                <a href="#">Message</a>
+                <a href="#">Notification</a>
+                <a href="#">Aide</a>
+              </div>
+
+              <div class="sidebar-footer">
+                <a href="#" style="color: red;">Se déconnecter</a>
+                <a href="#">Parametre</a>
+              </div>
+            </div>
+
+          </div>
             <div class="search-bar">
                 <input type="text" placeholder="Rechercher">
                 <i class="fas fa-search"></i>
