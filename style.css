@@ -87,6 +87,9 @@ header {
     color: black;
     transition: 0.3s;
     z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
 }
 
@@ -102,23 +105,59 @@ header {
     cursor: pointer;
 }
 
-/* Liens du menu */
-.sidebar a {
-    display: block;
+/* Liste des liens */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 60px 0 0;
+}
+
+.sidebar ul li {
+    padding: 15px;
+}
+
+.sidebar ul li a {
+    display: flex;
+    align-items: center;
     color: black;
     text-decoration: none;
-    padding: 15px;
-    font-size: 20px;
-    text-align: center;
+    font-size: 18px;
+    padding: 10px;
     font-weight: bold;
 }
 
+/* Lien actif */
+.sidebar ul li a.active {
+    color: blue;
+}
 
+/* Pied de la barre */
+.sidebar-footer {
+    padding: 15px;
+    border-top: 1px solid #ddd;
+}
+
+.sidebar-footer a {
+    display: flex;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+/* Bouton déconnexion */
+.sidebar-footer .logout {
+    color: red;
+}
 
 /* Affichage du menu */
 .sidebar.active {
     left: 0;
 }
+
+
 
 
 /* Profil */
@@ -436,10 +475,10 @@ footer {
         align-items: center;
         justify-content: space-between;
     }
-
+  
 
     header img{
-        visibility: hidden;
+        display: none;
     }
 
     .logo{ 
@@ -449,7 +488,11 @@ footer {
         margin-top: 10px;
         margin-right: 25%;
     }
-
+    .welcome h1{
+        padding-left:20px ;
+        padding-right:20px ;
+        
+    }
 
     .search-bar {
         max-width: 300px;
