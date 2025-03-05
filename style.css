@@ -10,20 +10,23 @@ body {
 /* Barre de navigation  */
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     padding: 15px 30px;
+
 }
 
 .search-bar {
     display: flex;
-    align-items: center;
-    background: white;
-    padding: 5px 5px;
+    justify-content: end;
+    padding-right: 5px;
+    padding-left: 15px;
     border-radius: 20px;
-    margin-left: 5%;
+    height: 40px;
+    width: 60%;
 
 }
+
 .logo{
     display: flex;
     justify-content: space-between;
@@ -36,31 +39,40 @@ header {
 .search-bar input {
     border: none;
     outline: none;
-    padding: 5px;
-    width: 300px;
-}
+    padding: 5px 10px;
+    width: 70%;
+    border-radius: 20px;
+    height: 30px;
+    width: 85%;
 
-.search-bar i {
-    color: gray;
-    width: 150px;
+
 }
 
 .top-bar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 30px;
+    padding: 15px 15px;
+
 }
+
+/*  la photo du profile quand elle agrandis*/
+.profile {
+    padding-top: 5px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
 
 /* Icône du menu */
 .menu-icon {
     font-size: 30px;
     cursor: pointer;
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    color: white;
     padding: 10px 15px;
+    color: white;
+
     border-radius: 5px;
 }
 
@@ -69,17 +81,15 @@ header {
     position: fixed;
     top: 0;
     left: -250px;
-    width: 250px;
+    width: 200px;
     height: 100%;
     background: white;
     color: black;
     transition: 0.3s;
+    z-index: 1000;
 
 }
 
-.sidebar-footer {
- 
-}
 /* Bouton de fermeture */
 .close-btn {
     position: absolute;
