@@ -450,22 +450,23 @@ ul {
     align-items: center;
 }
 
-.place-g h1 {
-    font-size: 2rem;
+
+.gauche  {
+  display: flex;
+  justify-content:start;
+    align-items: center;
 }
 
-.place-g p {
-    font-size: 1rem;
-}
 
-.place-d p {
-    font-size: 1.2rem;
-    font-weight: bold;
+.gauche img, footer {
+    width: 200px;
+    height: 150px;
+    color: white;
 }
 
 .down-logo {
     width: 70px;
-    height: 70px;
+    height: 100px;
 }
 
 .photo-reseau {
@@ -474,7 +475,8 @@ ul {
 }
 
 footer {
-    text-align: center;
+    text-align: start;
+    width: auto;
     font-size: 0.7rem;
     margin-top: 0.5rem;
 }
