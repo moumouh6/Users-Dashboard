@@ -62,10 +62,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Appliquer le filtre au chargement de la page
     filterCourses();
 
-    // Fonction pour gérer l'affichage de la barre de navigation
-    function toggleNav() {
-        document.getElementById("sidebar").classList.toggle("active"); // Ajouter ou supprimer la classe active
-    }
+    
 
     // Sélection de l'image de profil
     const profilePic = document.querySelector(".profile");
