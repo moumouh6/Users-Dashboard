@@ -102,11 +102,3 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-
-
-
-document.querySelectorAll(".site-mzl").forEach(button => {
-    button.addEventListener("click", () => {
-        alert("cette page n'est pas accessible pour le moment!");
-    });
-});
