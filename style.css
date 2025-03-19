@@ -220,11 +220,15 @@ header {
 
 
 /* Profil */
-.profile{
-    padding-top: 5px;
+.profile , .image{
     width: 100px;
     height: 100px;
     border-radius: 50%;
+    padding-top: 0;
+}
+.image:hover{
+    box-shadow: none;
+    border: none;
 }
 
 /* Section de bienvenue */
